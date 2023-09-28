@@ -1,0 +1,209 @@
+body{
+	font-family: Arial, Roboto, Epilogue, sans-serif;
+	margin:0px;
+}
+header{
+	background:linear-gradient(#0a0200,#4b0f05);
+	height:auto;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+}
+nav{
+	width:70%;
+	display:flex;
+	justify-content:space-evenly;
+	height:auto;
+	text-align:center;
+}
+nav a:link, header a:visited{
+	font-size:18px;
+	width:20%;
+	color:#c9c69b;
+	text-decoration:none;
+	text-shadow: 0px 0px 0px white;
+	transition: text-shadow 0.5s, color 0.5s;
+}
+nav a:hover{
+	color:#fff;
+	text-shadow: 0px 0px 3px white;
+}
+.logo img{
+	width:100%
+}
+main{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	align-content:center;
+	padding-bottom:2vh;
+}
+h1{
+	color:#6a0612;
+	text-align:center;
+}
+h2{
+	color:#946e5b;
+	text-align:center;
+	font-size:20px;
+}
+.padreficha{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+.fichas{
+	text-align:justify;
+	background-color:#ffffff;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	border-style:solid;
+	border-width:2px;
+	border-radius:10px;
+	border-color:#aaa;
+	margin-left:50px;
+	width:25%;
+	height:auto;
+	margin:20px;
+	padding:2%;
+}
+.titulos{
+	display:flex;
+	flex-direction:column;
+	background-color:#ffffff;
+}
+.fichas img{
+	display:block;
+	width:60px;
+	height:60px;
+	margin-left:auto;
+	margin-right:auto;
+}
+p{
+	font-size:15px;
+	margin-top:-1vh;
+	color:#878497;
+	line-height:27px;
+	height:auto;
+}
+.slider img{
+	width:100%;
+}
+footer{
+	background:linear-gradient(#0a0200,#4b0f05);
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	height:auto;
+}
+.footerinfo{
+	margin-top:2vh;
+	flex-direction:column;
+	width:15%
+}
+.footerinfo img{
+	width:15%;
+}
+header, footer{
+	height:auto;
+	width:100%;
+	justify-content:space-around;
+}
+.otros img{
+	width:35%;
+}
+.otros{
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+}
+.habitaciones{
+	display:flex;
+	flex-direction:row;
+	margin:2%;
+	height:auto;
+}
+.txt{
+	display:flex;
+	flex-direction:column;
+	font-size:15px;
+	margin-top:1vh;
+	color:#878497;
+	line-height:27px;
+	text-align:justify;
+	height:auto;
+	margin-left:20px;
+	
+}
+.habitaciones img{
+	border-radius:10%;
+	height:auto;
+}
+
+/* - - - - - Media Queries - - - - - */
+
+@media screen and (max-width:800px)
+{
+	header{
+		flex-direction:column;
+		padding-bottom:2vh;
+	}
+	nav{
+		flex-direction:column;
+		width:100%;
+		
+	}
+	nav a:link{
+		width:100%;
+		font-size:25px;
+	}
+	.padreficha{
+		flex-direction:column;
+		align-content:center;
+	}
+	.fichas{
+		padding-left:8%;
+		padding-right:8%;
+		width:80%;
+	}
+	footer{
+		height:auto;
+		padding-top:2vh;
+		flex-direction:column;
+		flex-wrap:wrap;
+		justify-content:center;
+	}
+	.footerinfo{
+		width:90%;
+		text-align:center;
+	}
+	.otros{
+		width:70%;
+		margin-top:5vh;
+		flex-direction:column;
+	}
+	.otros img{
+		width:100%;
+	}
+	.habitaciones{
+		flex-direction:column;
+	}
+	.txt{
+		margin:0px;
+		font-size:30px;
+	}
+	.habitaciones img{
+		width:100%;
+	}
+	p{
+		font-size:25px;
+	}
+	h1{
+		font-size:40px;
+	}
+	h2{
+		font-size:30px;
+	}
+}
